@@ -6,16 +6,16 @@ const res = prompt(`Яку кількість дроїдів бажаєте ку
 let totalPrice, rest; 
 
 if (res === null) {
-    console.log(`Скасовано користувачем!`);
+    alert(`Скасовано користувачем!`);
 } else {
     totalPrice = pricePerDroid * Number(res);
 }
 
 if (totalPrice > credits) {
-    console.log(`Недостатньо коштів на рахунку!`);
+    alert(`Недостатньо коштів на рахунку!`);
 } else {
     rest = credits - totalPrice;
 
-    console.log(`Ви купили ${res} дроїдів, на рахунку залишилося ${rest} кредитів.`);
+    alert(`Ви купили ${res} дроїдів, на рахунку залишилося ${rest} кредитів.`);
 }
         
